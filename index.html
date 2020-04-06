@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form Example</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-header">
+      <h1 id="title">Internal Survey</h1>
+      <p id="description">Tolong diisi ya gaes hehe</p>
+    </div>
+    <form action="" method="post" accept-charset="utf-8" id="survey-form">
+      <!--Nama-->
+      <label for="name" id="name-label">Isi nama lengkap kamu</label>
+      <input type="text" name="nama" id="name" placeholder="ex: John Doe" />
+      <!--Email-->
+      <label for="email" id="email-label">Alamat email valid ya</label>
+      <input type="email" name="email" id="email" placeholder="ex: official.john@doe.com" required />
+      <!--Grade-->
+      <label for="grade" id="number-label">Grade</label>
+      <input type="number" name="grade" id="grade" placeholder="range 1 - 10" min="1" max="10" />
+      <!--Jobdesc-->
+      <label for="job">Jobdesc saat ini</label>
+      <select name="job" id="job">
+        <option value="junior">Junior Dev</option>
+        <option value="front">Front End Dev</option>
+        <option value="back">Back End Dev</option>
+        <option value="full">Full Stack Dev</option>
+        <option value="devops">DevOps</option>
+      </select>
+      <!--OS-->
+      <label for="win"><i class="fab fa-windows"></i></label>
+      <input type="radio" name="os" id="win" />
+      <label for="apple"><i class="fab fa-apple"></i></label>
+      <input type="radio" name="os" id="apple" />
+      <label for="linux"><i class="fab fa-linux"></i></label>
+      <input type="radio" name="os" id="linux" />
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/4039030ec9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
