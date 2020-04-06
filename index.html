@@ -27,8 +27,8 @@
       <label for="grade" id="number-label">Grade</label>
       <input type="number" name="grade" id="grade" placeholder="range 1 - 10" min="1" max="10" />
       <!--Jobdesc-->
-      <label for="job">Jobdesc saat ini</label>
-      <select name="job" id="job">
+      <label for="dropdown">Jobdesc saat ini</label>
+      <select name="job" id="dropdown">
         <option value="junior">Junior Dev</option>
         <option value="front">Front End Dev</option>
         <option value="back">Back End Dev</option>
@@ -36,12 +36,28 @@
         <option value="devops">DevOps</option>
       </select>
       <!--OS-->
+      <p id="radio">OS mana yang kamu pakai?</p>
       <label for="win"><i class="fab fa-windows"></i></label>
       <input type="radio" name="os" id="win" />
       <label for="apple"><i class="fab fa-apple"></i></label>
       <input type="radio" name="os" id="apple" />
       <label for="linux"><i class="fab fa-linux"></i></label>
       <input type="radio" name="os" id="linux" />
+      <!--Tech Stack-->
+      <p id="checkbox">Pilih mana yang menurutmu perlu banget dipelajari</p>
+      <input type="checkbox" name="tech" id="c" value="c"/>
+      <label for="c">C++</label>
+      <input type="checkbox" name="tech" id="css" value="css"/>
+      <label for="css">CSS</label>
+      <input type="checkbox" name="tech" id="js" value="js"/>
+      <label for="js">Javascript</label>
+      <input type="checkbox" name="tech" id="py" value="python" />
+      <label for="py">Python</label>
+      <!--Saran-->
+      <label for="saran">Ada saran dan komentar?</label>
+      <textarea name="saran" id="saran" placeholder="disini sarannya"></textarea>
+      <!--Submit button-->
+      <button class="btn btn-primary" type="submit">Submit</button>
     </form>
   </div>
   <script src="https://kit.fontawesome.com/4039030ec9.js" crossorigin="anonymous"></script>
