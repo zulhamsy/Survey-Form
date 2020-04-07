@@ -19,13 +19,13 @@
     <form action="" method="post" accept-charset="utf-8" id="survey-form">
       <!--Nama-->
       <label for="name" id="name-label">Isi nama lengkap kamu</label>
-      <input type="text" name="nama" id="name" placeholder="John Doe" />
+      <input type="text" name="nama" id="name" placeholder="John Doe" required/>
       <!--Email-->
       <label for="email" id="email-label">Alamat email valid ya</label>
       <input type="email" name="email" id="email" placeholder="official.john@doe.com" required />
       <!--Grade-->
       <label for="grade" id="number-label">Grade</label>
-      <input type="number" name="grade" id="grade" placeholder="range 1 - 10" min="1" max="10" />
+      <input type="number" name="grade" id="number" placeholder="range 1 - 10" min="1" max="10" />
       <!--Jobdesc-->
       <label for="dropdown">Jobdesc saat ini</label>
       <select name="job" id="dropdown">
@@ -38,13 +38,13 @@
       <!--OS-->
       <p id="radio">OS mana yang kamu pakai?</p>
       <div id="radio-item">
-        <input type="radio" name="os" id="win" />
+        <input type="radio" name="os" id="win" value="win" />
         <label for="win"><i class="fab fa-windows"></i></label>
         
-        <input type="radio" name="os" id="apple" />
+        <input type="radio" name="os" id="apple" value="apple" />
         <label for="apple"><i class="fab fa-apple"></i></label>
         
-        <input type="radio" name="os" id="linux" />
+        <input type="radio" name="os" id="linux" value="linux"/>
         <label for="linux"><i class="fab fa-linux"></i></label>
       </div>
       <!--Tech Stack-->
@@ -61,10 +61,12 @@
       <label for="saran">Ada saran dan komentar?</label>
       <textarea name="saran" id="saran"></textarea>
       <!--Submit button-->
-      <button class="btn btn-primary" type="submit">Submit</button>
+      <button id="submit" class="btn btn-primary" type="submit">Submit</button>
     </form>
   </div>
   <script src="https://kit.fontawesome.com/4039030ec9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8">
+  </script>
 </body>
 
 </html>
