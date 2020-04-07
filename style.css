@@ -26,6 +26,10 @@ body, ::placeholder {
   padding-bottom: 5px;
 }
 
+.form-header > #title {
+  margin-bottom: 0.5rem;
+}
+
 /*Form*/
 .container > #survey-form {
   margin-top: 20px;
@@ -40,7 +44,7 @@ textarea {
   width: 100%;
   font-family: inherit;
   margin-top: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #333;
   outline: none;
@@ -52,7 +56,7 @@ p#checkbox,
 label[for="saran"] {
   display: block;
   margin-bottom: 8px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 textarea {
@@ -91,15 +95,21 @@ input[type="radio"] + label {
   font-size: 2.5rem;
 }
 
+input[type="checkbox"] + label {
+  margin-bottom: 0.5rem;
+}
+
 input[type="checkbox"] + label:before {
   content: "✓";
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #333;
+  border-radius: 5px;
   color: #fff;
   width: 1.2rem;
   height: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 input[type="checkbox"]:checked + label:before {
