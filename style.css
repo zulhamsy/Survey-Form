@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
+:root {
+  --bg-color: #3282b8;
+  --bg-light: #bbe1fa;
+  --color: #1b262c;
+  --color-light: #7698ab;
+  --optional: #7EAB76;
+  --color-dark: #0f4c75;
+}
+
 *,
 *:before,
 *:after {
@@ -8,15 +17,23 @@
   box-sizing: border-box;
 }
 
-body, ::placeholder {
+body {
   font-size: 14px;
   font-family: 'Raleway';
+  background: var(--bg-color);
+}
+
+::placeholder {
+  font-family: inherit;
 }
 
 .container {
   margin: 10px auto;
   width: 90vw;
   padding: 10px;
+  border-radius: 7px;
+  background: var(--bg-light);
+  color: var(--color);
 }
 
 .btn {
@@ -28,7 +45,9 @@ body, ::placeholder {
 }
 
 .btn-primary {
-  border: none
+  border: none;
+  background: var(--bg-color);
+  color: var(--bg-light)
 }
 
 .optional {
@@ -38,10 +57,10 @@ body, ::placeholder {
 .optional:after {
   content: "optional";
   position: absolute;
-  top: 0;
+  top: -1px;
   margin-left: 5px;
-  font-size: 0.5rem;
-  border: 1px solid #333;
+  font-size: 0.6rem;
+  background: var(--optional);
   border-radius: 5px;
   padding: 2px;
 }
@@ -49,7 +68,7 @@ body, ::placeholder {
 /*Form Header*/
 .container > .form-header {
   text-align: center;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--color);
   padding-bottom: 5px;
 }
 
@@ -73,9 +92,9 @@ textarea {
   margin-top: 8px;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--color);
   outline: none;
-  background: none;
+  background: inherit;
 }
 
 p#radio,
@@ -89,7 +108,7 @@ label[for="saran"] {
 textarea {
   font-family: inherit;
   padding: 5px;
-  border: 1px solid #333;
+  border: 1px solid var(--color);
   width: 100%;
   height: 5rem;
   border-radius: 5px;
@@ -118,18 +137,18 @@ input[type="radio"] + label {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px dotted #ddd;
-  color: #ddd;
+  color: var(--color-light);
   border-radius: 5px;
   width: 3rem;
   height: 3rem;
   font-size: 2.5rem;
+  transition: 0.2s;
 }
 
 input[type="radio"]:checked + label {
-  color: #fff;
-  border: 2px dotted #333;
-  background: #333;
+  color: var(--bg-light);
+  background: var(--bg-color);
+  transform: scale(1.05);
 }
 
 input[type="checkbox"] + label {
@@ -141,14 +160,16 @@ input[type="checkbox"] + label:before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #333;
+  border: 1px solid var(--color);
   border-radius: 5px;
-  color: #fff;
+  color: var(--bg-light);
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
+  transition: 0.2s;
 }
 
 input[type="checkbox"]:checked + label:before {
-  color: #333;
+  background: var(--bg-color);
+  border-color: var(--bg-color);
 }
