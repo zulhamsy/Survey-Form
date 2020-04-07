@@ -37,15 +37,16 @@
       </select>
       <!--OS-->
       <p id="radio">OS mana yang kamu pakai?</p>
-      
-      <input type="radio" name="os" id="win" />
-      <label for="win"><i class="fab fa-windows"></i></label>
-      
-      <input type="radio" name="os" id="apple" />
-      <label for="apple"><i class="fab fa-apple"></i></label>
-      
-      <input type="radio" name="os" id="linux" />
-      <label for="linux"><i class="fab fa-linux"></i></label>
+      <div id="radio-item">
+        <input type="radio" name="os" id="win" />
+        <label for="win"><i class="fab fa-windows"></i></label>
+        
+        <input type="radio" name="os" id="apple" />
+        <label for="apple"><i class="fab fa-apple"></i></label>
+        
+        <input type="radio" name="os" id="linux" />
+        <label for="linux"><i class="fab fa-linux"></i></label>
+      </div>
       <!--Tech Stack-->
       <p id="checkbox">Pilih mana yang menurutmu perlu banget dipelajari</p>
       <input type="checkbox" name="tech" id="c" value="c"/>
@@ -58,7 +59,7 @@
       <label for="py">Python</label>
       <!--Saran-->
       <label for="saran">Ada saran dan komentar?</label>
-      <textarea name="saran" id="saran" placeholder="disini sarannya"></textarea>
+      <textarea name="saran" id="saran"></textarea>
       <!--Submit button-->
       <button class="btn btn-primary" type="submit">Submit</button>
     </form>
