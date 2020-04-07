@@ -31,6 +31,21 @@ body, ::placeholder {
   border: none
 }
 
+.optional {
+  position: relative;
+}
+
+.optional:after {
+  content: "optional";
+  position: absolute;
+  top: 0;
+  margin-left: 5px;
+  font-size: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 /*Form Header*/
 .container > .form-header {
   text-align: center;
